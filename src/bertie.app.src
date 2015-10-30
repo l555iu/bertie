@@ -2,11 +2,13 @@
  [
   {description, "erlang test program"},
   {vsn, "1"},
-  {registered, []},
+     {registered, [bertie_sup]},
   {applications, [
                   kernel,
-                  stdlib
+      stdlib,
+      cowboy,
+      erlydtl
                  ]},
   {mod, { bertie_app, []}},
-  {env, [daily]}
+     {env, []}
  ]}.
